@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="btnSuma">Suma</string>
+    <string name="btnResta">Resta</string>
+    <string name="btnMultiplicacion">Multiplicacion</string>
+    <string name="btnDividir">Dividir</string>
+    <string name="etNumber1">Inserte un numero</string>
+    <string name="etNumber2">Inserte otro numero</string>
+    <string name="tvResultado"></string>
+</resources>
