@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvBienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvBienvenida"
+            android:textAlignment="center"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnTransaccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/aguamarinaO"
+            android:text="@string/btnTransaccion" />
+
+        <Button
+            android:id="@+id/btnPersona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnTransaccion"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/aguamarinaO"
+            android:text="@string/btnPersona" />
+    </RelativeLayout>
+</LinearLayout>
