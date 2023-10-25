@@ -8,6 +8,15 @@
     android:padding="15dp"
     tools:context=".transaccion">
 
+    <TextView
+        android:id="@+id/tvDatosPersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvVacios"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:textColor="@color/azullaguna"/>
+
     <Spinner
         android:id="@+id/spOrigen"
         android:layout_width="match_parent"
@@ -45,5 +54,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:backgroundTint="@color/aguamarinaO"
         android:text="@string/btnTransaccion" />
+
+    <TextView
+        android:id="@+id/tvCambio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/aguamarinaC"
+        android:text="@string/tvVacios" />
+
+    <TextView
+        android:id="@+id/tvCambio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="2dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/aguamarinaC"
+        android:text="@string/tvVacios" />
+
 </LinearLayout>
