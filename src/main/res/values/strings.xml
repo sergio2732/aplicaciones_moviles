@@ -4,12 +4,14 @@
     <string name="tvBienvenida">Bienvenido a mi hospedaje</string>
     <string name="btnPersona">Registrar</string>
     <string name="btnTransaccion">Transaccion</string>
+    <string name="btnvolver">Volver</string>
     <!--Persona-->
     <string name="tvTituloPersona">Registro de Persona</string>
     <string name="etNombres">Introduzca su Nombre</string>
     <string name="etApellidos">Introduzca su apellido</string>
     <string name="etDocumento">Coloque el documento</string>
     <string name="btnCambio">Cambio</string>
+
     <!--Transaccion-->
     <string-array name="Divisas">
         <item>COP</item>
@@ -18,4 +20,5 @@
     </string-array>
     <string name="etMonto">Coloque el monto</string>
     <string name="etTasa">Tasa de Cambio</string>
+    <string name="tvVacios"></string>
 </resources>
