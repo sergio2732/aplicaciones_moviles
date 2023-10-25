@@ -12,6 +12,10 @@ public class Transaccion {
         this.amountOrin = amountOrin;
         this.tasa = tasa;
     }
+    public Transaccion(long amountOrin, long tasa){
+        this.amountOrin = amountOrin;
+        this.tasa = tasa;
+    }
     public long changeDange(){
         return (this.amountOrin*tasa);
     }
