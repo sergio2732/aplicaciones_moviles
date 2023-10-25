@@ -15,7 +15,8 @@ public class Persona implements Serializable {
         this.lastname = lastname;
         this.document = document;
     }
-
+    public Persona(){
+    }
     public String getName() {
         return name;
     }
