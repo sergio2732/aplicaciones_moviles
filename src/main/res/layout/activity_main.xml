@@ -19,7 +19,9 @@
             android:layout_height="wrap_content"
             android:text="@string/tvBienvenida"
             android:textAlignment="center"
-            android:textSize="24dp" />
+            android:layout_marginTop="10dp"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/btnTransaccion"
@@ -27,7 +29,10 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:backgroundTint="@color/aguamarinaO"
-            android:text="@string/btnTransaccion" />
+            android:text="@string/btnTransaccion"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"/>
 
         <Button
             android:id="@+id/btnPersona"
@@ -36,6 +41,7 @@
             android:layout_above="@id/btnTransaccion"
             android:layout_centerInParent="true"
             android:backgroundTint="@color/aguamarinaO"
+            android:textColor="@color/white"
             android:text="@string/btnPersona" />
     </RelativeLayout>
 </LinearLayout>
