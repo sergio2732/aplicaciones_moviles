@@ -4,7 +4,7 @@
     <string name="tvBienvenida">Bienvenido a mi hospedaje</string>
     <string name="btnPersona">Registrar</string>
     <string name="btnTransaccion">Transaccion</string>
-    <string name="btnvolver">Volver</string>
+    <string name="btnVolver">Volver</string>
     <!--Persona-->
     <string name="tvTituloPersona">Registro de Persona</string>
     <string name="etNombres">Introduzca su Nombre</string>
