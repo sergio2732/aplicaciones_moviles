@@ -19,6 +19,7 @@ public class Transaccion {
     public long changeDange(){
         return (this.amountOrin*tasa);
     }
+    public long changeinCOP() { return (this.amountOrin / tasa);}
 
     @Override
     public String toString() {
