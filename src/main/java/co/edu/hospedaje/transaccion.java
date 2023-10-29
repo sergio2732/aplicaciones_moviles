@@ -1,5 +1,6 @@
 package co.edu.hospedaje;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,7 @@ public class transaccion extends AppCompatActivity {
     private Spinner spOrigin;
     private Spinner spDestiny;
     private Button btnTransaccion;
+    private Button btnVolver2;
     private EditText etMonto;
     private EditText etTasa;
     private TextView tvCambio1;
@@ -30,17 +32,42 @@ public class transaccion extends AppCompatActivity {
         begin();
         receiver();
         this.btnTransaccion.setOnClickListener(this::change);
+        this.btnVolver2.setOnClickListener(this::volver);
     }
 
     private void change(View view) {
-        Toast.makeText(this, "Seleccion: "+ spOrigin.getSelectedItemPosition(), Toast.LENGTH_SHORT).show();
         Transaccion transaccion;
         long monto = Long.parseLong(etMonto.getText().toString());
         long tasa = Long.parseLong(etTasa.getText().toString());
-        if ("USD".equals(spOrigin.getSelectedItem())){
+        if ("USD".equals(spOrigin.getSelectedItem()) && "COP".equals(spDestiny.getSelectedItem())){
             transaccion = new Transaccion(monto, tasa);
             long cop = transaccion.changeDange();
             tvCambio1.setText("Pesos colombianos: "+cop);
+        }
+        if ("EURO".equals(spOrigin.getSelectedItem()) && "COP".equals(spDestiny.getSelectedItem())){
+            transaccion = new Transaccion(monto, tasa);
+            long cop = transaccion.changeDange();
+            tvCambio1.setText("Pesos colombianos: "+cop);
+        }
+        if ("EURO".equals(spOrigin.getSelectedItem()) && "USD".equals(spDestiny.getSelectedItem())){
+            transaccion = new Transaccion(monto, tasa);
+            long usd = transaccion.changeDange();
+            tvCambio1.setText("Dolares: "+ usd);
+        }
+        if ("COP".equals(spOrigin.getSelectedItem()) && "USD".equals(spDestiny.getSelectedItem())){
+            transaccion = new Transaccion(monto, tasa);
+            long usd = transaccion.changeinCOP();
+            tvCambio1.setText("Dolares: " + usd);
+        }
+        if ("COP".equals(spOrigin.getSelectedItem()) && "EURO".equals(spDestiny.getSelectedItem())){
+            transaccion = new Transaccion(monto, tasa);
+            long euro = transaccion.changeinCOP();
+            tvCambio1.setText("Euros: " + euro);
+        }
+        if ("USD".equals(spOrigin.getSelectedItem()) && "EURO".equals(spDestiny.getSelectedItem())){
+            transaccion = new Transaccion(monto, tasa);
+            long euro = transaccion.changeinCOP();
+            tvCambio1.setText("Euros: " + euro);
         }
     }
 
@@ -48,8 +75,8 @@ public class transaccion extends AppCompatActivity {
         Bundle data = getIntent().getExtras( );
         if (data != null){
             Persona persona = new Persona();
-             persona = (Persona) data.get("persona");
-             tvDatopersona.setText(persona.getName()+" "+persona.getLastname());
+            persona = (Persona) data.get("persona");
+            tvDatopersona.setText(persona.getName()+" "+persona.getLastname());
             //Toast.makeText(this, "El cliente es: " + persona, Toast.LENGTH_LONG).show();
         }else{
             tvDatopersona.setText("libre");
@@ -63,6 +90,11 @@ public class transaccion extends AppCompatActivity {
         this.btnTransaccion = findViewById(R.id.btnCambiar);
         this.etMonto = findViewById(R.id.etMonto);
         this.etTasa = findViewById(R.id.etTasa);
-        this.tvCambio1 = findViewById(R.id.tvCambio1):
+        this.tvCambio1 = findViewById(R.id.tvCambio1);
+        this.btnVolver2 = findViewById(R.id.btnVolver2);
+    }
+    private void volver(View view){
+        Intent irprincipal = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(irprincipal);
     }
 }
