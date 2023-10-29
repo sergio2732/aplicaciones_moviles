@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="15dp"
-    tools:context=".RegistroPersona">
+    tools:context=".RegistroPersona"
+    android:backgroundTint="@color/white">
 
 
     <TextView
@@ -16,7 +17,8 @@
         android:layout_marginTop="20dp"
         android:text="@string/tvTituloPersona"
         android:textAlignment="center"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/etNombres"
@@ -53,6 +55,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/aguamarinaO"
-        android:text="@string/btnCambio" />
+        android:textColor="@color/white"
+        android:text="@string/btnCambio"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnVolver1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/aguamarinaO"
+        android:text="@string/btnVolver"
+        android:padding="10dp"
+        android:layout_marginTop="20dp" />
 
 </LinearLayout>
