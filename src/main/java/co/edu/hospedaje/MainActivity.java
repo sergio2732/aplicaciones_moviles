@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         btnPersona.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent irPersona = new Intent(getApplicationContext(), RegistroPersona.class);
+                Intent irPersona =  new Intent(getApplicationContext(), RegistroPersona.class);
                 startActivity(irPersona);
             }
         });
