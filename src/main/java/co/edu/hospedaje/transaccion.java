@@ -41,33 +41,57 @@ public class transaccion extends AppCompatActivity {
         long tasa = Long.parseLong(etTasa.getText().toString());
         if ("USD".equals(spOrigin.getSelectedItem()) && "COP".equals(spDestiny.getSelectedItem())){
             transaccion = new Transaccion(monto, tasa);
-            long cop = transaccion.changeDange();
-            tvCambio1.setText("Pesos colombianos: "+cop);
+            if (tasa != 0){
+                long cop = transaccion.changeDange();
+                tvCambio1.setText("Pesos colombianos: "+cop);
+            }else{
+                Toast.makeText(this, "No se puede tener una tasa de 0", Toast.LENGTH_LONG).show();
+            }
         }
         if ("EURO".equals(spOrigin.getSelectedItem()) && "COP".equals(spDestiny.getSelectedItem())){
             transaccion = new Transaccion(monto, tasa);
-            long cop = transaccion.changeDange();
-            tvCambio1.setText("Pesos colombianos: "+cop);
+            if(tasa != 0){
+                long cop = transaccion.changeDange();
+                tvCambio1.setText("Pesos colombianos: "+cop);
+            }else{
+                Toast.makeText(this, "No se puede tener una tasa de 0", Toast.LENGTH_LONG).show();
+            }
         }
         if ("EURO".equals(spOrigin.getSelectedItem()) && "USD".equals(spDestiny.getSelectedItem())){
             transaccion = new Transaccion(monto, tasa);
-            long usd = transaccion.changeDange();
-            tvCambio1.setText("Dolares: "+ usd);
+            if(tasa != 0){
+                long usd = transaccion.changeDange();
+                tvCambio1.setText("Dolares: "+ usd);
+            }else{
+                Toast.makeText(this, "No se puede tener una tasa de 0", Toast.LENGTH_LONG).show();
+            }
         }
         if ("COP".equals(spOrigin.getSelectedItem()) && "USD".equals(spDestiny.getSelectedItem())){
             transaccion = new Transaccion(monto, tasa);
-            long usd = transaccion.changeinCOP();
-            tvCambio1.setText("Dolares: " + usd);
+            if(tasa != 0){
+                long usd = transaccion.changeinCOP();
+                tvCambio1.setText("Dolares: " + usd);
+            }else{
+                Toast.makeText(this, "No se puede tener una tasa de 0", Toast.LENGTH_LONG).show();
+            }
         }
         if ("COP".equals(spOrigin.getSelectedItem()) && "EURO".equals(spDestiny.getSelectedItem())){
             transaccion = new Transaccion(monto, tasa);
-            long euro = transaccion.changeinCOP();
-            tvCambio1.setText("Euros: " + euro);
+            if(tasa != 0){
+                long euro = transaccion.changeinCOP();
+                tvCambio1.setText("Euros: " + euro);
+            }else{
+                Toast.makeText(this, "No se puede tener una tasa de 0", Toast.LENGTH_LONG).show();
+            }
         }
         if ("USD".equals(spOrigin.getSelectedItem()) && "EURO".equals(spDestiny.getSelectedItem())){
             transaccion = new Transaccion(monto, tasa);
-            long euro = transaccion.changeinCOP();
-            tvCambio1.setText("Euros: " + euro);
+            if(tasa != 0){
+                long euro = transaccion.changeinCOP();
+                tvCambio1.setText("Euros: " + euro);
+            }else{
+                Toast.makeText(this, "No se puede tener una tasa de 0", Toast.LENGTH_LONG).show();
+            }
         }
     }
 
