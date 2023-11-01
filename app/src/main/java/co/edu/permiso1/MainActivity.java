@@ -1,15 +1,19 @@
 package co.edu.permiso1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    public static final int REQUEST_CODE = 100;
     //1.Declaracion de objetos del view a utilizar
     private Button btnRequestPermission;
     private Button btnCheckPermissio;
@@ -20,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvRS;
     private TextView tvInternet;
     private TextView tvDactilar;
+    private TextView tvResponse;
 
 
     @Override
@@ -49,7 +54,19 @@ public class MainActivity extends AppCompatActivity {
         tvInternet.setText("Status camera: " + statusInternet);
         tvDactilar.setText("Status camera: " + statusDactilar);
     }
+    //Gestion de permiso
     private void voidRequestPermission(View view) {
+        if (ActivityCompat.checkSelfPermission(getApplicationContext(),Manifest.permission.CAMERA) != PackageManager.PERMISSION_DENIED){
+            ActivityCompat.requestPermissions(MainActivity.this, new String []{Manifest.permission.CAMERA}, REQUEST_CODE);
+        }
+    }
+    //7. Gestion de respuesta de usuario respecto a la solicitud de permiso
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        tvResponse.setText(""+ grantResults);
     }
 
     //2. enlaces de objetos
@@ -63,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         this.tvRS = findViewById(R.id.tvRS);
         this.tvInternet = findViewById(R.id.tvInternet);
         this.tvDactilar = findViewById(R.id.tvDactilar);
-        btnRequestPermission.setEnabled(false);
+        this.tvResponse = findViewById(R.id.tvResponse);
+        btnRequestPermission.setEnabled(true);
     }
 }
