@@ -7,6 +7,7 @@
     <string name="tvRS">Status Permission Read Storage</string>
     <string name="tvInternet">Status Permission Internet</string>
     <string name="tvDactilar">Status Permission fingerprint</string>
-    <string name="btnRequestPermission">Request Permission</string>
+    <string name="btnRequestPermission">Request Permission Camera </string>
     <string name="btnCheckPermission">Check Permission</string>
+    <string name="tvResponse"></string>
 </resources>
