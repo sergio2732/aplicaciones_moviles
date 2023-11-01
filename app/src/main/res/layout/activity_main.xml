@@ -70,6 +70,12 @@
         android:text="@string/tvDactilar"
         />
 
+    <TextView
+        android:id="@+id/tvResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvResponse" />
+
     <Button
         android:id="@+id/btnRequestPermission"
         android:layout_width="match_parent"
