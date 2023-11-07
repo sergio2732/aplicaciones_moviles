@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TestPsicologico</string>
+        <string name="tvTitulo">Test de personalidad</string>
+        <string name="tvEnunciado1">¿De qué habla?: </string>
+        <string name="tvEnunciado2">Ritmo con que habla: </string>
+        <string name="tvEnunciado3">Forma en que se viste / Apariencia Personal: </string>
+        <string name="tvEnunciado4">Estilo de Comunicación: </string>
+        <string name="tvEnunciado5">Lo motivan: </string>
+        <string name="tvEnunciado6">Lo estimulan: </string>
+        <string name="btnResultado">Resultado</string>
+        <!--Resultado-->
+        <string name="tvTituloR">FELICIDADES</string>
+        <string name="tvEnunciadoR">Su tipo de personalidad es: </string>
+        <string name="tvPersonalidad"></string>
+        <string name="btnVolver">Volver</string>
+</resources>
