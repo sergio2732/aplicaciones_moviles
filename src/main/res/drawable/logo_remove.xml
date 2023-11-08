@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:id="@+id/logo_remove"
+        android:layout_width="316dp"
+        android:layout_height="316dp"
+        android:background="@drawable/logo_remove" tools:ignore="ResourceCycle,StateListReachable" />
+
+    <!-- drawable/logo_remove.xml -->
+    <vector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="316dp"
+        android:height="316dp"
+        android:viewportWidth="316"
+        android:viewportHeight="316"
+        >
+        <group>
+            <clip-path
+                android:pathData="M0 0H316V316H0V0Z"
+                />
+        </group>
+    </vector>
+</selector>
