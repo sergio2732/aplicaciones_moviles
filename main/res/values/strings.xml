@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">permiso1</string>
+    <string name="tvTitulo">Gestion Permisos</string>
+    <string name="tvCamera">Status Permission Camera</string>
+    <string name="tvBT">Status Permission BT</string>
+    <string name="tvEws">Status Permission External Storage</string>
+    <string name="tvRS">Status Permission Read Storage</string>
+    <string name="tvInternet">Status Permission Internet</string>
+    <string name="tvDactilar">Status Permission fingerprint</string>
+    <string name="btnRequestPermission">Request Permission Camera </string>
+    <string name="btnCheckPermission">Check Permission</string>
+    <string name="tvResponse"></string>
+    <!--Aceptar permisos-->
+    <string name="tvVersionAndroidLB">1.VersionAndroid:</string>
+    <string name="tvVersionAndroid"></string>
+    <string name="tvLigth">2.Flashlingt: </string>
+    <string name="btnOn">On</string>
+    <string name="btnOff">Off</string>
+    <string name="tvLevelBaterry">3.Level of Baterry</string>
+    <string name="tvLevelBaterry_2"></string>
+    <string name="tvStorage">4.Storage: </string>
+    <string name="etNameFile">Name of File</string>
+    <string name="btnSaveFile">Save</string>
+    <string name="tvState">5.Conection: </string>
+</resources>
