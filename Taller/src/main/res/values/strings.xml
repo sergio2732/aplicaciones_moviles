@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Taller1</string>
+    <string name="tvMainTitlulo">Ejercicios android studio</string>
+    <string name="tvMainCreador">Sergio Alejandro Parra Ordoñez</string>
+    <string name="tvMainPor">Por: </string>
+    <string name="btnMainPunto1">Punto 1</string>
+    <string name="btnMainPunto2">Punto 2</string>
+    <string name="btnMainPunto3">Punto 3</string>
+    <string name="btnMainPunto4">Punto 4</string>
+    <!--Punto 2-->
+    <string name="tvFacturaTitulo">Mercado Online</string>
+    <string name="tvFacturaNombre">Inserte su nombre: </string>
+    <string name="tvFacturaApellidos">Inserte su apellidos: </string>
+    <string name="tvFacturaDireccion">Inserte su dirección: </string>
+    <string name="etFacturaNombre">Nombre</string>
+    <string name="etFacturaApellido">Apellidos</string>
+    <string name="etFacturaDireccion">Direccion</string>
+    <string name="btnFacturaCompra">Realizar compra</string>
+    <string name="tvFacturaTituloCompra">Productos disponibles</string>
+    <!--Producto-->
+    <string name="spFacturaProducto1"></string>
+    <string name="spFacturaProducto2"></string>
+    <string name="spFacturaProducto3"></string>
+    <string name="spFacturaProducto4"></string>
+    <string name="spFacturaProducto5"></string>
+    <string name="spFacturaProducto6"></string>
+    <string name="btnFactura">Generar Factura</string>
+    <!--Factura-->
+    <string name="tvFactura">Factura</string>
+    <string name="tvFacturaTotal">Total: </string>
+</resources>

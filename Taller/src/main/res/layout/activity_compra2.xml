@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvFacturaTituloComtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/tvFacturaTituloCompra"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spFacturaProducto1"
+        android:layout_width="308dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:spinnerMode="dialog"
+        android:backgroundTint="@color/rose"/>
+
+    <Spinner
+        android:id="@+id/spFacturaProducto3"
+        android:layout_width="308dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="248dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:spinnerMode="dialog"
+        android:backgroundTint="@color/rose"/>
+
+    <Spinner
+        android:id="@+id/spFacturaProducto4"
+        android:layout_width="308dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="324dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:spinnerMode="dialog"
+        android:backgroundTint="@color/rose"/>
+
+    <Spinner
+        android:id="@+id/spFacturaProducto5"
+        android:layout_width="308dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="396dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:spinnerMode="dialog"
+        android:backgroundTint="@color/rose"/>
+
+    <Spinner
+        android:id="@+id/spFacturaProducto6"
+        android:layout_width="308dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="464dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:spinnerMode="dialog"
+        android:backgroundTint="@color/rose"/>
+
+    <Spinner
+        android:id="@+id/spFacturaProducto2"
+        android:layout_width="308dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="176dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:spinnerMode="dialog"
+        android:backgroundTint="@color/rose"/>
+
+    <Button
+        android:id="@+id/btnFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"
+        android:text="@string/btnFactura"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
