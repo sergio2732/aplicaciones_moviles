@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calcular Edad</string>
+    <string name="tvTitulo">Conoce la edad de una persona</string>
+    <string name="tvCondición">Coloque la fecha en la que nacio: </string>
+    <string name="etFecha">dia/mes/año</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="tvResultado">La edad es:</string>
+</resources>
