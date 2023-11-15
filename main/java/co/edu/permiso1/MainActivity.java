@@ -91,13 +91,13 @@ public class MainActivity extends AppCompatActivity {
     private void begin(){
         this.btnCheckPermissions = findViewById(R.id.btnCheckPermission);
         this.btnRequestPermissions = findViewById(R.id.btnRequestPermission);
-        this.tvDactilar = findViewById(R.id.tvFingerprint);
+        this.tvDactilar = findViewById(R.id.tvDactilar);
         this.tvBT = findViewById(R.id.tvBT);
         this.tvCamera = findViewById(R.id.tvCamera);
         this.tvInternet = findViewById(R.id.tvInternet);
         this.tvEws = findViewById(R.id.tvEws);
         this.tvResponse = findViewById(R.id.tvResponse);
-        this.tvRS = findViewById(R.id.tvReadStorage);
+        this.tvRS = findViewById(R.id.tvRS);
         btnRequestPermissions.setEnabled(true);
     }
 }
